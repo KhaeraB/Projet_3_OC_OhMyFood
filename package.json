@@ -1,0 +1,22 @@
+{
+  "name": "projet_3_oc_ohmyfood",
+  "version": "1.0.0",
+  "description": "projet openclassroom",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhaeraB/Projet_3_OC_OhMyFood.git"
+  },
+  "author": "Khaera Belkadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KhaeraB/Projet_3_OC_OhMyFood/issues"
+  },
+  "homepage": "https://github.com/KhaeraB/Projet_3_OC_OhMyFood#readme",
+  "dependencies": {
+    "sass": "^1.49.11"
+  }
+}
