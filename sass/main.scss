@@ -1,4 +1,25 @@
-@import "./base/reset";
-@import "./base/normalize"; 
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&family=Shrikhand&display=swap');
+/*# Base */
+@import "./base/_reset";
+@import "./base/_normalize"; 
+
+/*# CDN FONTS */
+@import "./base/_typo"; 
+
+/*# Layout */
+@import "./layout/_header"; 
+@import "./layout/_nav"; 
+@import "./layout/_resto"; 
+@import "./layout/_footer";
+
+/*# Components */
+@import "./components/_btn";
+
+/*# Pages */
+@import "./pages/_home"; 
+@import "./pages/_template_resto";
+
+/*# Utils */
+@import "./utils/_extensions"; 
+@import "./utils/_functions"; 
+@import "./utils/_mixins";
+@import "./utils/_variables"; 

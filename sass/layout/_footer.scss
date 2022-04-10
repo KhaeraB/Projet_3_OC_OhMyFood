@@ -1,0 +1,44 @@
+@import "../utils/variables"; 
+@import "../base/_typo"; 
+@import "../utils/mixins"; 
+
+footer{
+    background-color: darken($color-grey, 80%);
+    color: white;
+    div{
+        padding: 5%;
+        margin: 0;
+        .footerLogo{
+            width: 30%;
+            padding-bottom: 5%;
+            path{
+                fill: white;
+            }
+        }
+        ul{
+            display: grid;
+            line-height: 25px;
+    
+            li{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: flex-start;
+                align-items: center;
+                i{
+                    margin: 0;
+                    font-size: 0.8em;
+                    padding-right: 2%;
+                    
+                }
+                .fa-utensils{
+                    padding-right: 3%;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    
+}
