@@ -10,6 +10,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&family=Shrikhand&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0 auto;
   padding: 0;
@@ -488,6 +490,69 @@ footer div ul li p {
 }
 
 /*# Components */
+.like {
+  font-size: 47px;
+  padding-right: 6%;
+  padding-top: 4%;
+  margin: 0;
+}
+.like i {
+  position: absolute;
+  top: 33px;
+  right: 35px;
+}
+.like .far:hover {
+  display: none;
+}
+.like .fas {
+  color: transparent;
+}
+.like .fas:active {
+  color: #9c47fc;
+  display: block;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.like_single_page {
+  font-size: 25px;
+  padding-right: 6%;
+  padding-top: 4%;
+  margin: 0;
+}
+.like_single_page i {
+  position: absolute;
+  top: 33px;
+  right: 35px;
+}
+.like_single_page .far:hover {
+  display: none;
+}
+.like_single_page .fas {
+  color: transparent;
+}
+.like_single_page .fas:active {
+  color: #9c47fc;
+  display: block;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.purple_btn {
+  width: 63%;
+  padding: 4%;
+  margin: 4%;
+  font-weight: 600;
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(180deg, rgba(255, 121, 218, 0.7597254005) 8%, rgb(147, 86, 220) 120%);
+  border-radius: 30px 30px 30px 30px;
+  border: 0;
+}
+
 /*# Pages */
 /*# CDN FONTS */
 body {
@@ -511,18 +576,6 @@ body {
   line-height: 1.2em;
   font-size: 1.5em;
   padding: 5%;
-}
-#home #explore .purple_btn {
-  width: 63%;
-  padding: 4%;
-  margin: 4%;
-  font-weight: 600;
-  font-size: 22px;
-  cursor: pointer;
-  color: white;
-  background: linear-gradient(180deg, rgba(255, 121, 218, 0.7597254005) 8%, rgb(147, 86, 220) 120%);
-  border-radius: 30px 30px 30px 30px;
-  border: 0;
 }
 #home .functioning {
   display: grid;
@@ -651,29 +704,112 @@ body {
   line-height: 1.2em;
   font-size: 1.2em;
 }
-#home #restaurants .card a .resto_description .like {
-  font-size: 30px;
-  padding-right: 6%;
-  padding-top: 4%;
+
+/*# CDN FONTS */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#single_product {
+  display: grid;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#single_product #template_header {
+  display: flex;
+  flex-direction: column;
   margin: 0;
 }
-#home #restaurants .card a .resto_description .like i {
-  position: absolute;
-  top: 40px;
-  right: 35px;
+#single_product #template_header .banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3%;
 }
-#home #restaurants .card a .resto_description .like .far:hover {
+#single_product #template_header .banner a {
+  margin-left: 2%;
+  color: black;
+}
+#single_product #template_header .banner a .fa-arrow-left {
+  font-size: 2em;
+}
+#single_product #template_header .banner .logo {
+  margin-left: 2%;
+  cursor: pointer;
+}
+#single_product #template_header .mainhero .bg_img {
+  width: 100%;
+  z-index: 2;
+}
+#single_product #template_content {
+  position: absolute;
+  width: 100%;
+  top: 330px;
+}
+#single_product #template_content #cart {
+  background-color: #EAEAEA;
+  z-index: 1;
+  border-radius: 30px 30px 0 0;
+}
+#single_product #template_content #cart #title {
+  padding: 4%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#single_product #template_content #cart #title h1 {
+  font-family: "Shrikhand", cursive;
+}
+#single_product #template_content #cart #title .fa-heart {
+  margin-right: 4%;
+  font-size: 2em;
+}
+#single_product #template_content #cart .menu {
+  padding: 0 4%;
+  display: grid;
+}
+#single_product #template_content #cart .menu .menu_cart {
+  width: 100%;
+}
+#single_product #template_content #cart .menu .menu_cart h2 {
+  margin-bottom: 0;
+}
+#single_product #template_content #cart .menu .menu_cart hr {
+  border: none;
+  border-bottom: 3px solid #99E2D0;
+  width: 12%;
+  margin: 2% 0;
+}
+#single_product #template_content #cart .menu .type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 2%;
+  padding: 3% 4%;
+  border-radius: 15px;
+  box-shadow: 0 7px 10px rgba(149, 149, 149, 0.3254901961);
+}
+#single_product #template_content #cart .menu .type .description {
+  margin: 3% 0;
+}
+#single_product #template_content #cart .menu .type .description h3 {
+  margin: 0;
+}
+#single_product #template_content #cart .menu .type .price {
+  margin-right: 0;
+}
+#single_product #template_content #cart .menu .type .addToCart {
   display: none;
 }
-#home #restaurants .card a .resto_description .like .fas {
-  color: transparent;
-}
-#home #restaurants .card a .resto_description .like .fas:active {
-  color: #9c47fc;
-  display: block;
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+#single_product footer {
+  width: 100%;
+  position: relative;
+  top: 1200px;
 }
 
 /*# Utils */

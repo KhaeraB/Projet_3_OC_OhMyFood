@@ -1,0 +1,116 @@
+@import "../utils/variables"; 
+@import "../base/_typo"; 
+@import "../utils/mixins"; 
+
+#single_product{
+    display: grid;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    #template_header{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+      
+       .banner{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 3%;
+            a{
+    
+                margin-left: 2%; 
+                color: black;
+                .fa-arrow-left{
+                    font-size: 2em;
+                }
+            }
+        
+            .logo{
+                margin-left: 2%;
+                cursor: pointer;
+            }
+        }
+        .mainhero{
+            .bg_img{
+                width: 100%;
+                z-index: 2;
+            }
+        }
+        
+    
+    }
+    #template_content{
+        position: absolute;
+        width: 100%;
+        top: 330px;
+        #cart{
+            background-color: $color-grey;
+            z-index: 1;
+            border-radius: 30px 30px 0 0 ;
+           
+            #title{
+                padding: 4%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                h1{
+                    font-family: 'Shrikhand', cursive;
+                }
+                .fa-heart{
+                    margin-right: 4%;
+                    font-size: 2em;
+                }
+            }
+            .menu{
+                padding: 0 4%;
+                display: grid;
+                .menu_cart{
+                    width: 100%;
+                    h2{
+                        margin-bottom: 0;
+                    }
+                    hr{
+                        border: none;
+                        border-bottom: 3px solid $color-tertiary;
+                        width: 12%;
+                        margin: 2% 0;
+                    }
+                }
+                .type{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: white;
+                    margin-bottom: 2%;
+                    padding: 3% 4%;
+                    border-radius: 15px;
+                    box-shadow: 0 7px 10px #95959553;
+                   
+                    
+                    .description{
+                        margin:3% 0;
+
+                        h3{
+                            margin: 0;
+                        }
+                    }
+                    .price{
+                        margin-right: 0;
+                    }
+                    .addToCart{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        position: relative; 
+        top: 1200px;
+    }
+}
