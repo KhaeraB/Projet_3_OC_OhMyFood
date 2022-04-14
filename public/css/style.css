@@ -994,7 +994,7 @@ body {
   justify-content: space-between;
 }
 #home #restaurants .cards_resto .card {
-  width: 450px;
+  width: 350px;
   align-content: center;
   background-color: white;
   height: 320px;
@@ -1010,7 +1010,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 2556px) {
   #home #restaurants .cards_resto .card {
     margin: 3%;
-    width: 355px;
+    width: 325px;
   }
 }
 #home #restaurants .cards_resto .card a {
@@ -1035,14 +1035,14 @@ body {
   bottom: 180px;
 }
 #home #restaurants .cards_resto .card a .img-card {
-  width: 450px;
+  width: 350px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
   height: 230px;
 }
 @media screen and (min-width: 768px) and (max-width: 2556px) {
   #home #restaurants .cards_resto .card a .img-card {
-    width: 355px;
+    width: 325px;
   }
 }
 #home #restaurants .cards_resto .card a .resto_description {
