@@ -26,7 +26,12 @@
         padding-right: 4%;
         
         }
-        @include media-between("tablet-up", "maxi-screen") {
+        @include media-between("tablet-up", "tablet-down") {
+        
+            position: relative;
+            margin: 0;
+        }
+        @include media-between("tablet-down", "maxi-screen") {
             display: flex;
             flex-direction: row;
             width: 25%;
@@ -38,7 +43,7 @@
 }
 .dropdown{
     display:none; 
-    @include media-between("tablet-up", "maxi-screen") {
+    @include media-between("tablet-down", "maxi-screen") {
         display: block;
         width : 200px; 
         background: transparent;
@@ -49,8 +54,7 @@
         right: 220px;
        
         .title {
-            padding : 30px;
-            background: $color-tertiary; 
+            padding : 15%;
             color : black;
             font-size : 1em;
             font-variant : small-caps;
@@ -61,7 +65,65 @@
             text-align: center;
             &::after {
                 content: " Les restaurants";
-              }
+              }  
+        }
+        .listview{
+            clear:both;
+            width:100%;
+            height:0px;
+            overflow: hidden;
+            text-align: center;
+            transition: height .4s ease;
+            background-color: lighten($color-grey, 5%);
+            border-radius: 0 0 20px 20px;
+            li {
+                padding : 30px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 600;
+    
+                    &:hover{
+                        color: $color-tertiary;
+                    }
+                }
+            }
+        }
+          
+          
+        #show {
+              position: absolute; 
+              opacity: 0; 
+              height: 0px;
+              &:checked + .listview {height: 300px;} 
+
+        }    
+
+    }
+  
+    @include media-between("tablet-up", "tablet-down") {
+        display: block;
+        width : 200px; 
+        background: transparent;
+        margin :0 9px; 
+        border-radius: 0 0 20px 20px;
+        position: absolute;
+        top: 0px;
+        right: 220px;
+       
+        .title {
+            padding : 9%;
+            color : black;
+            font-size : 1em;
+            font-variant : small-caps;
+            font-family: 'Shrikhand', cursive;
+            cursor : pointer;
+            display: block;
+            border-radius: 0 0 20px 20px;
+            text-align: center;
+            &::after {
+                content: " Les restaurants";
+              }  
         }
           
           

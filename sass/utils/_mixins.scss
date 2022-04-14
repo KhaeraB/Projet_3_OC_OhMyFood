@@ -1,4 +1,5 @@
 $breakpoints: (
+    "mobile-up": 501px,
     "tablet-up": 768px,
     "tablet-down": 900px,
     "desktop-up": 1024px,
@@ -8,7 +9,7 @@ $breakpoints: (
 );
 
 @mixin media-between($_keymin, $_keymax) {
-    @media screen and (min-width: map-get($breakpoints, $_keymin)) and (max-width: map-get($breakpoints, $_keymax) - 1) {
+    @media screen and (min-width: map-get($breakpoints, $_keymin)) and (max-width: map-get($breakpoints, $_keymax)) {
         &{ @content; }
     }
 }

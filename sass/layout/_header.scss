@@ -13,9 +13,10 @@ header{
             flex-direction: row;
             justify-content: space-around;
             padding: 1% 0 ;
+            align-items: center;
     }
     .bglogo{
-        z-index: 1;
+        
         margin: 0;
         padding: 5% 0;
         width: 100%;
@@ -37,6 +38,7 @@ header{
             width: 50%;
             @include media-between("tablet-up", "maxi-screen") {
                 width: 35%;
+                margin-left: 0;
             }
         }
         

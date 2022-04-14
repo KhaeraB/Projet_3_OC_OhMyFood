@@ -8,18 +8,20 @@
 /*# Layout */
 @import "./layout/_header"; 
 @import "./layout/_nav"; 
-@import "./layout/_resto"; 
+@import "./layout/_menu"; 
 @import "./layout/_footer";
 
 /*# Components */
 @import "./components/_btn";
+@import "./components/_loader";
 
 /*# Pages */
 @import "./pages/_home"; 
 @import "./pages/_template_resto";
 
+
+
 /*# Utils */
-@import "./utils/_extensions"; 
-@import "./utils/_functions"; 
+@import "./utils/_animation"; 
 @import "./utils/_mixins";
 @import "./utils/_variables"; 
