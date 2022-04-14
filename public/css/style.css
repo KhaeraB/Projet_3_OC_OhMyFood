@@ -767,6 +767,8 @@ footer div ul li p {
   display: block;
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
+  text-fill-color: transparent;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
