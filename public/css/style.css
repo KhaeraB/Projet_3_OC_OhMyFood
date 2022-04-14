@@ -823,7 +823,7 @@ footer div ul li p {
   background-color: rgba(213, 161, 255, 0.7);
   animation: loader 0.01s both;
   animation-delay: 1.75s;
-  z-index: 1;
+  z-index: 15;
 }
 #loader .spin_loader {
   border: 1.6rem solid pink;

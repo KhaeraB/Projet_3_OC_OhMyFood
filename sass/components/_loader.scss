@@ -10,7 +10,7 @@
     background-color: $color-opacity;
     animation: loader .01s both;
     animation-delay: 1.75s;
-    z-index: 1;
+    z-index: 15;
     
     .spin_loader {
         border: 1.6rem solid pink;
