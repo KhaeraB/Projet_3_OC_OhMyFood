@@ -8,9 +8,12 @@ footer{
     width: 100%;
     z-index: 10;
     position: relative;
-    top: 1139px;
-    @include media-between("mobile-up", "tablet-down") { 
-        top: 1454px;
+    top: 1018px;
+    @include media-between("mobile-up", "tablet-up") { 
+        top: 1065px;
+    }
+    @include media-between("tablet-up", "tablet-down") { 
+        top: 1384px;
     }
     @include media-between("tablet-down", "maxi-screen") { 
         top: 0;
