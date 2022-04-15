@@ -37,7 +37,7 @@
     i{
         position: absolute;
         top: 33px;
-        right: 35px;
+        right: 20px;
             @include media-between("tablet-up", "maxi-screen") {
                 position: absolute;
                 top: 18px;
