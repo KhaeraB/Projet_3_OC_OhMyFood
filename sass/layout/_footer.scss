@@ -8,7 +8,8 @@ footer{
     width: 100%;
     z-index: 10;
     position: relative;
-    top: 1013px;
+    top: 1050px;
+    margin-top: 4%;
     @include media-between("mobile-up", "tablet-up") { 
         top: 1215px;
     }
