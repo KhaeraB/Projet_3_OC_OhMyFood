@@ -10,7 +10,7 @@ footer{
     position: relative;
     top: 1013px;
     @include media-between("mobile-up", "tablet-up") { 
-        top: 1065px;
+        top: 1143px;
     }
     @include media-between("tablet-up", "tablet-down") { 
         top: 1384px;
