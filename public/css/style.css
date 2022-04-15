@@ -545,6 +545,7 @@ body {
     position: inherit;
     border-radius: 0;
     top: 0;
+    padding-bottom: 4%;
   }
 }
 #template_content #cart #title {
