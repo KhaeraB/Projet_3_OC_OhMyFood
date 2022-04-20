@@ -96,6 +96,12 @@
                     .addToCart{
                         padding: 7% 7%;
                         opacity: 1;
+                         animation: mouseover 2s;
+                       
+                        .fa-check-circle {
+                            animation: rotate-btn 1s ;
+                           -webkit-animation: rotate-btn 1s ;   
+                        }
                     }
                    
                 }
@@ -119,21 +125,16 @@
                 }
 
                 .addToCart {
-                    
+                    animation: mouseout 2s;
                     opacity: 0;
                     padding:7% 0;
-                    transition: 1s ease-in-out;
-                    -webkit-transition: 1s ease-in-out;
-                    -moz-transition: 1s ease-in-out;
-                    -ms-transition: 1s ease-in-out;
-                    -o-transition: 1s ease-in-out;
-                    transition-property:opacity, padding;
                     background-color: $color-tertiary;
                     border: none;
                     border-radius: 0 15px 15px 0;
                     .fa-check-circle {
                         color: white;
                         font-size: 1.5em;
+                        
 
                     }
                 }

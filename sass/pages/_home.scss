@@ -156,7 +156,7 @@
 
             @include media-between("tablet-up", "maxi-screen") {
                 margin: 2% 0 2% 0;
-                padding: 0 6%;
+                padding: 1%;
             }
         }
 
@@ -167,7 +167,7 @@
             justify-content: space-between;
 
             .card {
-                width: 350px;
+                width: 90%;
                 align-content: center;
                 background-color: white;
                 height: 320px;
@@ -181,8 +181,8 @@
                 margin-bottom: 8%;
 
                 @include media-between("tablet-up", "maxi-screen") {
-                    margin: 3%;
-                    width: 325px;
+                    margin: 1%;
+                    width: 31%;
                 }
 
 
@@ -210,13 +210,13 @@
                     }
 
                     .img-card {
-                        width: 350px;
+                        width: 100%;
                         border-radius: 15px 15px 0 0;
                         object-fit: cover;
                         height: 230px;
 
                         @include media-between("tablet-up", "maxi-screen") {
-                            width: 325px;
+                            width: 100%;
                         }
                     }
 

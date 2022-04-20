@@ -17,7 +17,7 @@
     }
     .fas{
         color: transparent;
-        &:active{
+        &:hover{
             color: #9c47fc;
             display: block;
             background: -webkit-linear-gradient($color-secondary, $color-primary);
@@ -51,7 +51,7 @@
     }
     .fas{
         color: transparent;
-        &:active{
+        &:hover{
             color: #9c47fc;
             display: block;
             background: -webkit-linear-gradient($color-secondary, $color-primary);

@@ -1,4 +1,5 @@
 
+/*-LOADER-*/
 
 @keyframes loader {
     100% {
@@ -30,7 +31,7 @@
        
     }
 }
-
+/*-Show Menu-*/
 
 @keyframes show{
     from{
@@ -43,6 +44,63 @@
         opacity: 1;
     }
 };  
+
+/*-Show addtoCart Check-*/
+
+@keyframes mouseover {
+
+    0%{
+        opacity: 0;
+        padding:7% 0;
+    }
+    100%{
+        padding: 7% 7%;
+         opacity: 1;
+        transition: 1s ease-in-out;
+        -webkit-transition: 1s ease-in-out;
+        -moz-transition: 1s ease-in-out;
+        -ms-transition: 1s ease-in-out;
+        -o-transition: 1s ease-in-out;
+        transition-property:opacity, padding;
+    }
+
+}
+@keyframes mouseout {
+
+    0%{
+        padding: 7% 7%;
+         opacity: 1;
+        transition: 1s ease-in-out;
+        -webkit-transition: 1s ease-in-out;
+        -moz-transition: 1s ease-in-out;
+        -ms-transition: 1s ease-in-out;
+        -o-transition: 1s ease-in-out;
+        transition-property:opacity, padding;
+       
+    }
+    100%{
+        opacity: 0;
+        padding:7% 0;
+        transition: 1s ease-in-out;
+        -webkit-transition: 1s ease-in-out;
+        -moz-transition: 1s ease-in-out;
+        -ms-transition: 1s ease-in-out;
+        -o-transition: 1s ease-in-out;
+        transition-property:opacity, padding;
+    }
+
+}
+
+/*-Rotate Check Icon-*/
+@keyframes rotate-btn{
+    from{
+        transform: rotate(0deg); 
+    }
+    
+    to{
+        transform: rotate(-360deg); 
+    }
+};
 
 
 

@@ -607,6 +607,11 @@ body {
 #template_content #cart .menu .type:hover .addToCart {
   padding: 7% 7%;
   opacity: 1;
+  animation: mouseover 2s;
+}
+#template_content #cart .menu .type:hover .addToCart .fa-check-circle {
+  animation: rotate-btn 1s;
+  -webkit-animation: rotate-btn 1s;
 }
 #template_content #cart .menu .type .description {
   margin: 0;
@@ -622,14 +627,9 @@ body {
   font-weight: bold;
 }
 #template_content #cart .menu .type .addToCart {
+  animation: mouseout 2s;
   opacity: 0;
   padding: 7% 0;
-  transition: 1s ease-in-out;
-  -webkit-transition: 1s ease-in-out;
-  -moz-transition: 1s ease-in-out;
-  -ms-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
-  transition-property: opacity, padding;
   background-color: #99E2D0;
   border: none;
   border-radius: 0 15px 15px 0;
@@ -739,7 +739,7 @@ footer div ul li p {
 .like .fas {
   color: transparent;
 }
-.like .fas:active {
+.like .fas:hover {
   color: #9c47fc;
   display: block;
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
@@ -774,7 +774,7 @@ footer div ul li p {
 .like_single_page .fas {
   color: transparent;
 }
-.like_single_page .fas:active {
+.like_single_page .fas:hover {
   color: #9c47fc;
   display: block;
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
@@ -996,7 +996,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 2556px) {
   #home #restaurants .title_resto {
     margin: 2% 0 2% 0;
-    padding: 0 6%;
+    padding: 1%;
   }
 }
 #home #restaurants .cards_resto {
@@ -1006,7 +1006,7 @@ body {
   justify-content: space-between;
 }
 #home #restaurants .cards_resto .card {
-  width: 350px;
+  width: 90%;
   align-content: center;
   background-color: white;
   height: 320px;
@@ -1021,8 +1021,8 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 2556px) {
   #home #restaurants .cards_resto .card {
-    margin: 3%;
-    width: 325px;
+    margin: 1%;
+    width: 31%;
   }
 }
 #home #restaurants .cards_resto .card a {
@@ -1047,14 +1047,14 @@ body {
   bottom: 180px;
 }
 #home #restaurants .cards_resto .card a .img-card {
-  width: 350px;
+  width: 100%;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
   height: 230px;
 }
 @media screen and (min-width: 768px) and (max-width: 2556px) {
   #home #restaurants .cards_resto .card a .img-card {
-    width: 325px;
+    width: 100%;
   }
 }
 #home #restaurants .cards_resto .card a .resto_description {
@@ -1082,6 +1082,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/*-LOADER-*/
 @keyframes loader {
   100% {
     opacity: 0;
@@ -1104,6 +1105,7 @@ body {
     transform: rotate(360deg);
   }
 }
+/*-Show Menu-*/
 @keyframes show {
   from {
     margin-top: 200px;
@@ -1112,6 +1114,54 @@ body {
   to {
     margin-top: 0;
     opacity: 1;
+  }
+}
+/*-Show addtoCart Check-*/
+@keyframes mouseover {
+  0% {
+    opacity: 0;
+    padding: 7% 0;
+  }
+  100% {
+    padding: 7% 7%;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition-property: opacity, padding;
+  }
+}
+@keyframes mouseout {
+  0% {
+    padding: 7% 7%;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition-property: opacity, padding;
+  }
+  100% {
+    opacity: 0;
+    padding: 7% 0;
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition-property: opacity, padding;
+  }
+}
+/*-Rotate Check Icon-*/
+@keyframes rotate-btn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
   }
 }
 #single_product {
@@ -1151,6 +1201,7 @@ body {
 }
 
 /*# Utils */
+/*-LOADER-*/
 @keyframes loader {
   100% {
     opacity: 0;
@@ -1173,6 +1224,7 @@ body {
     transform: rotate(360deg);
   }
 }
+/*-Show Menu-*/
 @keyframes show {
   from {
     margin-top: 200px;
@@ -1181,6 +1233,54 @@ body {
   to {
     margin-top: 0;
     opacity: 1;
+  }
+}
+/*-Show addtoCart Check-*/
+@keyframes mouseover {
+  0% {
+    opacity: 0;
+    padding: 7% 0;
+  }
+  100% {
+    padding: 7% 7%;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition-property: opacity, padding;
+  }
+}
+@keyframes mouseout {
+  0% {
+    padding: 7% 7%;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition-property: opacity, padding;
+  }
+  100% {
+    opacity: 0;
+    padding: 7% 0;
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition-property: opacity, padding;
+  }
+}
+/*-Rotate Check Icon-*/
+@keyframes rotate-btn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
   }
 }
 
