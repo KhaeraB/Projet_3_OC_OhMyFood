@@ -9,9 +9,9 @@ footer{
     z-index: 10;
     position: relative;
     top: 1050px;
-    margin-top: 4%;
     @include media-between("mobile-up", "tablet-up") { 
         top: 1215px;
+      
     }
     @include media-between("tablet-up", "tablet-down") { 
         top: 1384px;
@@ -19,6 +19,7 @@ footer{
     @include media-between("tablet-down", "maxi-screen") { 
         top: 0;
         z-index: 0;
+        margin-top: 0;
     }
     div{
         padding: 5%;

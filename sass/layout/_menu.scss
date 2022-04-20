@@ -23,7 +23,7 @@
         top: 30%;
         width: 100%;
         @include media-between("mobile-up", "tablet-up") { 
-            padding-bottom: 50%;
+            padding-bottom: 56%;
         }
         @include media-between("tablet-down", "maxi-screen") {     
             position: inherit;

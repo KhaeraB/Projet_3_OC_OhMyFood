@@ -537,7 +537,7 @@ body {
 }
 @media screen and (min-width: 425px) and (max-width: 768px) {
   #template_content #cart {
-    padding-bottom: 50%;
+    padding-bottom: 56%;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 2556px) {
@@ -651,7 +651,6 @@ footer {
   z-index: 10;
   position: relative;
   top: 1050px;
-  margin-top: 4%;
 }
 @media screen and (min-width: 425px) and (max-width: 768px) {
   footer {
@@ -667,6 +666,7 @@ footer {
   footer {
     top: 0;
     z-index: 0;
+    margin-top: 0;
   }
 }
 footer div {
