@@ -294,11 +294,14 @@ body {
 }
 
 /*# Layout */
+/*HEADER*/
+/*VARIABLES*/
 /*# CDN FONTS */
 body {
   font-family: "Roboto", sans-serif;
 }
 
+/*MIXINS*/
 header {
   width: 100%;
   display: flex;
@@ -346,11 +349,14 @@ header .bglogo .logo {
   }
 }
 
+/*NAV*/
+/*VARIABLES*/
 /*# CDN FONTS */
 body {
   font-family: "Roboto", sans-serif;
 }
 
+/*MIXINS*/
 .localisation {
   width: 100%;
   margin: 0 0 5% 0;
@@ -507,6 +513,7 @@ body {
   }
 }
 
+/*MENU*/
 #template_content {
   width: 100%;
   top: 330px;
@@ -639,11 +646,14 @@ body {
   font-size: 1.5em;
 }
 
+/*FOOTER*/
+/*VARIABLES*/
 /*# CDN FONTS */
 body {
   font-family: "Roboto", sans-serif;
 }
 
+/*MIXINS*/
 footer {
   background-color: #1e1e1e;
   color: white;
@@ -721,6 +731,7 @@ footer div ul li p {
 }
 
 /*# Components */
+/*BUTTONS STYLES*/
 .like {
   font-size: 47px;
   padding-right: 6%;
@@ -822,6 +833,7 @@ footer div ul li p {
   }
 }
 
+/*LOADER*/
 #loader {
   display: flex;
   align-items: center;
@@ -849,11 +861,14 @@ footer div ul li p {
 }
 
 /*# Pages */
+/*HOME TEMPLATE*/
+/*VARIABLES*/
 /*# CDN FONTS */
 body {
   font-family: "Roboto", sans-serif;
 }
 
+/*MIXINS*/
 #home {
   width: 100%;
 }
@@ -1075,11 +1090,15 @@ body {
   font-size: 1.2em;
 }
 
+/*Template_resto*/
+/*VARIABLES*/
 /*# CDN FONTS */
 body {
   font-family: "Roboto", sans-serif;
 }
 
+/*MIXINS*/
+/*ANIMATIONS*/
 /*-LOADER-*/
 @keyframes loader {
   100% {
@@ -1199,6 +1218,7 @@ body {
 }
 
 /*# Utils */
+/*ANIMATIONS*/
 /*-LOADER-*/
 @keyframes loader {
   100% {
@@ -1281,5 +1301,7 @@ body {
     transform: rotate(-360deg);
   }
 }
+/*MIXINS*/
+/*VARIABLES*/
 
 /*# sourceMappingURL=style.css.map */
