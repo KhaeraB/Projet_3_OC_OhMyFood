@@ -1,3 +1,5 @@
+/*MIXINS*/
+
 $breakpoints: (
     "mobile-up": 425px,
     "tablet-up": 768px,
@@ -13,4 +15,5 @@ $breakpoints: (
         &{ @content; }
     }
 }
+
 
