@@ -556,7 +556,7 @@ body {
   }
 }
 #template_content #cart #title {
-  padding: 4%;
+  padding: 3%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -565,8 +565,8 @@ body {
   font-family: "Shrikhand", cursive;
 }
 #template_content #cart #title .fa-heart {
-  margin-right: 4%;
-  font-size: 2em;
+  margin-right: 0%;
+  font-size: 1.4em;
 }
 #template_content #cart .menu {
   padding: 0 4%;
