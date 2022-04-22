@@ -595,7 +595,7 @@ body {
 #template_content #cart .menu .type {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   background-color: white;
   margin-bottom: 2%;
@@ -610,6 +610,27 @@ body {
   #template_content #cart .menu .type {
     margin: 2%;
   }
+}
+#template_content #cart .menu .type:hover .description {
+  margin: 0;
+  line-height: 1.5em;
+  overflow: hidden;
+}
+#template_content #cart .menu .type:hover .description h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform: all 1s ease;
+}
+#template_content #cart .menu .type:hover .description p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 #template_content #cart .menu .type:hover .addToCart {
   padding: 7% 7%;
@@ -1152,7 +1173,7 @@ body {
 }
 @keyframes mouseout {
   0% {
-    padding: 7% 7%;
+    padding: 7% 4%;
     opacity: 1;
     transition: 1s ease-in-out;
     -webkit-transition: 1s ease-in-out;
@@ -1272,7 +1293,7 @@ body {
 }
 @keyframes mouseout {
   0% {
-    padding: 7% 7%;
+    padding: 7% 4%;
     opacity: 1;
     transition: 1s ease-in-out;
     -webkit-transition: 1s ease-in-out;

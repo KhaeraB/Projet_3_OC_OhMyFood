@@ -79,7 +79,7 @@
             .type {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
+                justify-content: flex-end;
                 align-items: center;
                 background-color: white;
                 margin-bottom: 2%;
@@ -92,8 +92,30 @@
                     @include media-between("tablet-down", "maxi-screen") {
                         margin: 2%;
                     }
+                
 
                 &:hover {
+                    .description {
+                        margin: 0;
+                        line-height: 1.5em;
+                        overflow: hidden;
+                            h3 {
+                                white-space: nowrap; 
+                                overflow: hidden;
+                                text-overflow: ellipsis; 
+                                transform:  all 1s ease;
+                            }
+                            p{
+                                white-space: nowrap; 
+                                overflow: hidden;
+                                text-overflow: ellipsis; 
+                                -webkit-transition: all 1s ease;
+                                -moz-transition: all 1s ease;
+                                -ms-transition: all 1s ease;
+                                -o-transition: all 1s ease;
+                                transition: all 1s ease;
+                            }
+                    }
 
                     .addToCart{
                         padding: 7% 7%;
@@ -113,7 +135,7 @@
                 .description {
                     margin: 0;
                     line-height: 1.5em;
-
+                
                     h3 {
                         margin: 0;
                     }
