@@ -1,0 +1,29 @@
+/*LOADER*/
+
+#loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: $color-opacity;
+    animation: loader .01s both;
+    animation-delay: 1.75s;
+    z-index: 15;
+    
+    .spin_loader {
+        border: 1.6rem solid pink;
+        border-radius: 50%;
+        border-top: 1.6rem solid $color-primary;
+        border-bottom: 1.6rem solid $color-secondary;
+        border-left: 1.6rem solid $color-tertiary;
+        border-right: 1.6rem solid $color-grey;
+        width: 3rem;
+        height: 3rem;
+        animation: spin 2s  ;
+    }
+    
+}

@@ -1,0 +1,54 @@
+/*Template_resto*/
+
+@import "../utils/variables";
+@import "../base/_typo";
+@import "../utils/_mixins";
+@import "../utils/_animation";
+
+#single_product {
+    display: grid;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    #template_header {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+        .banner {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 3% 0;
+            @include media-between("tablet-up", "maxi-screen") {     
+                padding: 1% 0; 
+            }
+
+            a {
+
+                margin-left: 2%;
+                color: black;
+
+                .fa-arrow-left {
+                    font-size: 2em;
+                }
+            }
+
+            .logo {
+                margin-left: 2%;
+                cursor: pointer;
+            }
+        }
+
+        
+
+
+    }
+
+   
+
+}
+
